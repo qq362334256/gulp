@@ -5,4 +5,3 @@
 
 console.log('index');
 console.log(2);
-
