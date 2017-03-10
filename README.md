@@ -12,3 +12,11 @@
     ├── build
         └── config.json - 构建配置文件
         └── ...其他构建文件
+    ├── node_modules - js依赖模块
+    ├── src - 开发目录
+        ├── components - 组件模块
+            └── container.vue - 内容组件
+            └── pages.vue - 分页组件
+            └── popup.vue - 弹出框组件
+            └── seldate.vue - 时间选择组件
+            └── selmonth.vue - 月份选择组件
