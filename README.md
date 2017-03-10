@@ -20,3 +20,15 @@
             └── popup.vue - 弹出框组件
             └── seldate.vue - 时间选择组件
             └── selmonth.vue - 月份选择组件
+        ├── config - 配置模块
+            └── api.config.js - api配置文件
+            └── env.config.js - 环境配置文件
+            └── resource.config.js - ajax配置文件
+            └── router.config.js - 路由配置文件
+        ├── filters - 过滤器模块
+        ├── public - 公共文件
+        ├── service - 服务模块
+        ├── store - 储存模块
+        ├── view - 视图模块
+        └── entry.js - 入口配置文件
+        └── index.html  入口html文件
