@@ -6,6 +6,7 @@
 * 1）执行开发任务: gulp dev
 * 2）执行生产任务: gulp pro
 
+---
 ### 项目结构
 ----- 根目录下 -----
 
@@ -99,3 +100,40 @@
 	└── gulpfile.js 						- gulp任务配置
 	└── package.json 						- 依赖说明
 	└── README.md 							- 说明文档
+	
+---
+### 构建配置说明(bulid/config.json)
+
+	{
+	    "path": {
+	        "entry": "./../src",    // 输入入口
+	        "outDev": "./../test",  // 测试出口
+	        "outPro": "./../static" // 生产出口
+	    },
+	    "server": {					// 测试服务配置
+	        "host": "127.0.0.1",	// 访问地址
+	        "port": 5001			// 端口号
+	    },
+	    "domain": "http://1.itoubu.com/liveManager/webadmin/static/", // 网站域名
+	    "resource": "http://1.itoubu.com/liveManager",				  // 网站资源路径
+	    "module": ["common"],										  // 模块配置
+	    "maxLimit": 1024,											  // 最大构建图片大小
+	    "autoOpen": false,											  // 是否自动打开游览器
+	    "api_path": {												  // api地址配置
+	        "dev": "http://1.itoubu.com/liveManager",				  // 测试api服务地址
+	        "pro": "http://1.itoubu.com/liveManager"				  // 生产api服务地址
+	    }
+	}
+	
+---
+### 开发流程(src/)
+* 控制台中在根目录下在输入 gulp dev
+* 根据对应的模块在对应的目录下创建相应文件
+* 在 view/ 目录下开发相对应的页面 xxx.vue文件
+* 公共的静态资源文件存放在 public/ 下
+
+---
+### 打包流程
+* 控制台中在根目录下在输入 gulp pro
+* 等待时间打包完毕后的文件就会出现在 static/ 下
+
